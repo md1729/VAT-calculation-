@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="muhammed"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-15 11:26:13 AM"/>
+        <attribute name="created" value="bXVoYW1tZWQ7REVMTDsyMDIzLTEyLTE1OzEwOjEyOjU5IEFNOzIzOTg="/>
+        <attribute name="edited" value="bXVoYW1tZWQ7REVMTDsyMDIzLTEyLTE1OzExOjI2OjEzIEFNOzI7MjUwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price, rate" type="Integer" array="False" size=""/>
+            <declare name="VAT, totalPrice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the price of the product&quot;" newline="True"/>
+            <input variable="price"/>
+            <output expression="&quot;Enter the VAT rate of the product:&quot;" newline="True"/>
+            <input variable="rate"/>
+            <assign variable="VAT" expression="(price*rate)/100"/>
+            <assign variable="totalPrice" expression="price + VAT"/>
+            <output expression="&quot;VAT Included Amount: &quot; &amp; totalPrice  &amp;  &quot; amount of VAT: &quot; &amp; VAT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
